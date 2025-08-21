@@ -1,0 +1,93 @@
+.latestnews-heading-inner {
+    margin-top: 8rem;
+}
+
+.inner-news-top {
+    .inner-latest-news-area {
+        .inner-news-tag-heading {
+            .borderLine {
+                &::after {
+                    left: 6%;
+                    width: 86px;
+
+                    @include tablet {
+                        left: 9%;
+                    }
+                    @include mobile{
+                        left: 11%;
+
+                    }
+                }
+            }
+        }
+
+        .inner-news-tag {
+            span {
+                background-color: $nshPrimary;
+                border-radius: 8px;
+                padding: 5px 10px;
+                margin: 1rem .3rem;
+
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .inner-news-image {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .inner-news-social {
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin: 4rem .3rem;
+                    height: 52px;
+                    width: 52px;
+                    border: 2px solid $nshBlack;
+                    border-radius: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+
+                    @include mobile {
+                        height: 48px;
+                        width: 48px;
+                    }
+
+                    @include s_mobile {
+                        height: 42px;
+                        width: 42px;
+                    }
+
+                    a {
+                        color: $nshBlack;
+
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inner-news-content {
+    div {
+        padding: 0 2em;
+
+        p {
+            a {
+                color: $nshBlack;
+            }
+        }
+    }
+}

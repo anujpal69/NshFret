@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+body{
+    font-family: "Archivo", sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #F5FDFF;
+    background-image: url('./../../assets/images/banner-1.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat-y;
+}
+
+@import './partail/varaible';
+@import './partail/mixin';
+@import './partail/global';
+@import './partail/animations';
+@import './partail/header';
+@import './partail/home';
+@import './partail/about';
+@import './partail/dry-cargo';
+@import './partail/careers';
+@import './partail/education';
+@import './partail/reefer';
+@import './partail/transportation';
+@import './partail/air-cargo';
+@import './partail/latest-news';
+@import './partail/news';
+@import './partail/lets-connect';
+@import './partail/fcl-lcl';
+@import './partail/bulk-cargo';
+@import './partail/haz-cargo';
+@import './partail/custom-clearence';
+@import './partail/legal-documantation';
+@import './partail/shipping-solution';
+@import './partail/our-services';
+@import './partail/international-courier';
+@import './partail/footer';

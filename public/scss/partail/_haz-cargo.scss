@@ -1,0 +1,14 @@
+.hazcargo-features-area{
+    padding: 1rem 4rem;
+    .feature-list-grid{
+        ul{
+            justify-content: space-around;
+        }
+    }
+}
+.hazcargo-bg-color{
+    background-color: $nshPrimary;
+}
+.haz-top-banner{
+    background-image: url('./../../assets/images/nsh-careers/hazcargo.jpg');
+}

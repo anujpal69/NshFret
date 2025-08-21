@@ -1,0 +1,139 @@
+.nsh-about-wrapper {
+    background-image: url("./../../assets/images/nsh-about/network-develop-img-2.webp");
+}
+.breadcrumb_line{
+    ul{
+        display: flex;
+        li{
+            font-size: 14px;
+            color: rgba(34, 34, 33, 0.5);
+            a{
+                color: $nshToggle;
+            }
+            i{
+                color: $nshToggle;
+                font-size: 13px;
+                padding: 0 4px;
+            }
+        }
+    }
+}
+.education-heading {
+    padding:2rem 3rem;
+    @include tablet{
+        padding: 1rem 1rem;
+    }
+     @include mobile{
+        padding: 1rem 0;
+     }
+    
+    ul {
+        display: flex;
+        list-style: none;
+        color: $nshToggle;
+
+        li {
+            padding-right: 8px;
+            font-size: 20px;
+
+            a {
+                text-decoration: none;
+                color: $nshToggle;
+            }
+
+            i {
+                font-size: 18px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+    h1 {
+        padding: 1rem 0;
+        font-weight: 900;
+    }
+}
+
+.education-image-about {
+    .edu-image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.education-topics {
+    padding: 2rem 0;
+
+
+    .edu-topic {
+        padding: 1rem 0;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        ol,ul {
+            padding-left: 1.5rem;
+
+            li {
+                list-style: disc !important;
+                padding: 5px 0;
+
+                &::marker {
+                    color: $nshPrimary;
+                    font-size: 20px;
+                }
+            }
+        }
+        ol{
+            li{
+                list-style: decimal !important;
+            }
+        }
+    }
+}
+
+.forword-edu {
+    padding-bottom: 2rem;
+    .forword-inner {
+        .row {
+            padding: .5rem 0;
+            .fwd-heading{
+                color: $nshToggle;
+            }
+            .fwd-img {
+                text-align: center;
+
+                img {
+                    width: 56%;
+                }
+            }
+
+            .fwd-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h4{
+                    color: #2b2b2b;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

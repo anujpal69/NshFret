@@ -1,0 +1,109 @@
+.carrer-contact-form {
+    padding: 3rem 4rem;
+
+    @include desktopMin {
+        padding: 2rem 2rem;
+    }
+
+    @include laptop {
+        padding: 2rem 1rem;
+    }
+
+    @include mobile {
+        padding: 2rem 0;
+    }
+
+    form {
+        border-radius: 8px;
+        padding: 2em 1em;
+        margin: 0 2em;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        background: #fff;
+
+        @include mobile {
+            margin: 0 1em;
+            padding: 2em 0em;
+        }
+
+        h4 {
+            font-weight: 700;
+            margin-bottom: 2em;
+            color: $nshBlack;
+            font-size: 18px;
+
+            @include mobile {
+                margin-left: 1rem;
+            }
+        }
+
+        .input-field {
+            @include mobile {
+                margin: 0 1rem;
+            }
+
+            select,
+            input,
+            textarea {
+                border: none;
+                font-size: 17px;
+                font-weight: 400;
+                padding: .7em;
+                margin-bottom: .3em;
+                background-color: $inputbg;
+                color: Gray;
+                box-shadow: none;
+
+                @include mobile {
+                    font-size: 15px;
+                }
+            }
+
+
+        }
+
+        .upload-resume {
+            border: none;
+            border: 1px dashed $nshPrimary;
+            text-align: center;
+            padding: 5px;
+            font-size: 18px;
+            border-radius: 50px;
+
+
+            &:hover {
+                background-color: $nshPrimary ;
+                color: $nshWhite;
+            }
+        }
+
+        .forn-btn-submit {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            @include mobile {
+                flex-direction: column;
+
+            }
+
+            div {
+                @include mobile{
+                    width: 100%;
+                padding: 0 1rem;
+                }
+                a {
+                    @include laptop{
+                        padding: .7rem 2rem;
+                    }
+                    @include mobile {
+                        width: 100%;
+                        margin: 1rem 0;
+                        font-size: 18px;
+                        padding: .5rem 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

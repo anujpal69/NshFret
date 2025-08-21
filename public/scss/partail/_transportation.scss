@@ -1,0 +1,35 @@
+.inland-banner-top {
+    background-image: url('./../../assets/images/nsh-about/inland-transportation-top-banner.jpg');
+}
+
+.shipping-logistics {
+    .shipping-logistics-grid {
+        .transport-list {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.shipping-logistics {
+    .shipping-logistics-grid {
+        .transportation-list-mobile {
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.nsh-inland-journy {
+    background-image: url('./../../assets/images/nsh-about/inland3.png');
+    background-position: bottom;
+}
+
+.transport-connect {
+    background-color: $nshWhite;
+}

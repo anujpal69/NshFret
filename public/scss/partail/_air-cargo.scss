@@ -1,0 +1,29 @@
+.nsh-air-cargo-banner{
+  background-image: url('./../../assets/images/nsh-about/air-banner.png');
+}
+.aircargo-shipping-logistics{
+    padding: 4rem 0;
+ .shipping-logistics-grid{
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+  }
+}
+}
+.nsh-home-wrapper{
+ .btn-drycargo-image {
+    position: relative;
+    z-index: 9;
+    .aircargo-scheduling-btn{
+        background-color: $nshPrimary;
+        border: $nshPrimary;
+        margin-right: 1rem;
+        &:hover{
+            background-color: $nshToggle;
+            color: $nshWhite;
+            border: 1px solid $nshText;
+        }
+    }
+  }
+}

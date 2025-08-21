@@ -1,0 +1,228 @@
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button,input{
+    &:focus,&:focus-visible{
+        box-shadow: none !important;
+    }
+}
+.short-container{
+    max-width: 992px;
+    margin: 0 auto;
+}
+.nshpy{
+    padding: 0 2.5em;
+    @include desktop{
+        padding: 0 0em;
+    }
+}
+
+.nsh-sec{
+    padding: 4em 1em;
+    @include tablet{
+        padding: 2em 1em;
+    }
+}
+.title{
+    font-size: 2.438em;
+    @include desktop{
+        font-size: 34px;
+    }
+    @include laptop{
+        font-size: 29px;
+    }
+    @include s_mobile{
+        font-size: 22px;
+    }
+}
+.subTitle{
+    font-size: 38px;
+    @include laptop{
+        font-size: 32px;
+    }
+    @include tablet{
+        font-size: 24px;
+    }
+    @include s_mobile{
+        font-size: 20px;
+    }
+}
+
+.nav-title{
+    font-size: 24px;
+    @include s_mobile{
+        font-size: 20px;
+    }
+}
+
+.fs13{
+    font-size: 13px;
+}
+.fs14{
+    font-size: 14px;
+}
+
+.fs16{
+    font-size: 16px;
+    @include tablet{
+        font-size: 14px;
+    }
+}
+
+.fs18{
+    font-size: 18px;
+}
+.fs20{
+    font-size: 20px;
+}
+.fs22{
+    font-size: 22px;
+}
+.fs28{
+    font-size: 28px;
+    @include laptop{
+        font-size: 24px;
+    }
+    @include mobile{
+        font-size: 20px;
+    }
+}
+
+
+.fw400{
+font-weight: 400;
+}
+.fw600{
+font-weight: 600;
+}
+.fw800{
+font-weight: 800;
+}
+._btn{
+    border: 2px solid $nshText;
+    padding: .7em 2.5em;
+    border-radius: 50px;
+    transition: all .1s linear;
+    @include mobile{
+        font-size: 14px;
+    }
+    &:hover{
+        border-color: $nshBlack;
+        background: $nshBlack;
+        color: $nshWhite;
+    }
+}
+
+.borderLine{
+    position: relative;
+    padding-bottom: .5em;
+    color: $nshToggle;
+
+    &::after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 6px;
+        background: $nshPrimary;
+        border-radius: 6px;
+        width: 100px;
+        @include desktopL{
+            width: 62px;
+        }
+    }
+}
+._white{
+    color: $nshWhite;
+    &:hover{
+        color: $nshWhite;
+    }
+}
+._black{
+    color: $nshBlack;
+    &:hover{
+        color: $nshBlack;
+    }
+}
+._black12{
+    color: $nshToggle;
+    &:hover{
+        color: $nshToggle;
+    }
+}
+.learn-more-btn {
+    text-transform: uppercase;
+    .arrow-icon {
+      width: 20px;
+      height: 20px;
+      background-color: $nshPrimary;
+      border-radius: 100%;
+      display: inline-block;
+      margin-left: 1em;
+    }
+  }
+
+ .container_992{
+    @include desktopMin{
+        padding: 4em 3.2em;
+    }
+}
+
+.tabcontent{
+    display: none;
+    &.active{
+        display: block !important;
+    }
+}
+.text-upper{
+    text-transform: uppercase;
+}
+
+
+.update_orderlist {
+  padding-left: 0; /* remove default padding */
+  list-style: none; /* remove browser bullets */
+}
+
+.update_orderlist li {
+  position: relative;
+  padding-left: 30px; /* space for custom icon */
+  line-height: 2;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.update_orderlist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #008BF9;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+._flex{
+    @include flex_align(flex,initial,center);
+    @include laptop{
+        @include flex_align(flex,initial,initial);
+    }
+}
+
+
+._dir{
+    @include laptop{
+        flex-direction: column-reverse;
+    }
+}
