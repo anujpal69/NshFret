@@ -49,9 +49,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 p-0">
+                 <div class="col-md-3 col-sm-6 p-0">
                     <div class="footer-widgets text-center px-3  photo_gallery">
-                        <li style="margin-bottom: 10px;" ><a href="./events.php" class="fs18 fw800 photo_title">PHOTO GALLERY</a></li>
+                        <li style="margin-bottom: 1px;" ><a href="./events.php" class="fs18 fw800 photo_title">PHOTO GALLERY</a></li>
                         <ul>
                             <li><a href="./events.php"> <img src="./public/assets/images/gallery/gallery-1.jpeg" alt="photo gallery"></a></li>
                             <li><a href="./events.php"> <img src="./public/assets/images/gallery/gallery-2.jpeg" alt="photo gallery"></a></li>

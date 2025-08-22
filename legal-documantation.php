@@ -6,7 +6,7 @@ include_once 'public/common/header.php'
 <section class="nsh-home-wrapper nsh-sec nsh-about-wrapper legal-top-banner">
     <div class="container-fluid container-lg">
         <div class="nsh-home-content">
-            <h1 class="title mb-0">LEGAL DOCUMANTATION</h1>
+            <h1 class="title mb-0">LEGAL DOCUMENTATION</h1>
         </div>
     </div>
 </section>
@@ -16,7 +16,7 @@ include_once 'public/common/header.php'
         <ul>
             <li><a href="./">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i></li>
-            <li>Legal Documantation</li>
+            <li>Legal Documentation</li>
         </ul>
     </div>
 </section>

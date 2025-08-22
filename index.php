@@ -159,7 +159,7 @@
                                         alt="shiping solutions">
                                 </div>
                                 <h3 class="_card-title fw800 fs17"><a href="./international_trading.php"
-                                        class="_white">International Trading</a></h3>
+                                        class="_white">Trading and procurement</a></h3>
 
                             </div>
                         </div>
