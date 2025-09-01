@@ -10,7 +10,7 @@
     height: 100vh;
     position: fixed;
     z-index: 9999;
-    background: linear-gradient(to bottom, #87CEFA, #ffffff); /* Sky blue to white */
+    background: linear-gradient(to bottom, #87CEFA, #ffffff); /* Sky gradient */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,17 +31,15 @@
     animation: flyUp 3s ease-in-out infinite;
 }
 
-/* better fluffy clouds */
+/* fluffy clouds */
 .cloud {
     position: absolute;
     background: #ffffff;
     border-radius: 50%;
-    box-shadow: 
-        -30px 10px 40px rgba(0,0,0,0.05),
-        20px 20px 40px rgba(0,0,0,0.05);
+    box-shadow: -20px 10px 40px rgba(0,0,0,0.05), 20px 20px 40px rgba(0,0,0,0.05);
     opacity: 0.9;
     filter: blur(1px);
-    animation: cloudMove 18s linear infinite;
+    animation: cloudMove linear infinite;
 }
 
 .cloud::before,
@@ -66,30 +64,30 @@
     right: -25%;
 }
 
-/* cloud sizes & positions */
+/* cloud sizes & unique timings */
 .cloud.small {
     width: 70px;
     height: 40px;
-    bottom: 25%;
-    left: -120px;
-    animation-duration: 25s;
+    bottom: 20%;
+    left: -100px;
+    animation-duration: 20s;
     animation-delay: 2s;
 }
 
 .cloud.medium {
     width: 120px;
     height: 60px;
-    top: 40%;
-    left: -200px;
-    animation-duration: 30s;
+    top: 30%;
+    left: -150px;
+    animation-duration: 28s;
     animation-delay: 4s;
 }
 
 .cloud.large {
     width: 180px;
     height: 90px;
-    top: 15%;
-    left: -250px;
+    top: 10%;
+    left: 100px;
     animation-duration: 35s;
 }
 
@@ -100,7 +98,7 @@
     100% { transform: translateY(0) rotate(0deg); }
 }
 
-/* clouds animation */
+/* clouds move left → right */
 @keyframes cloudMove {
     0% { transform: translateX(0); }
     100% { transform: translateX(120vw); }
@@ -125,12 +123,12 @@
 
 <div class="page-loader">
     <div class="loader">
-        <!-- Replace with your airplane image -->
+        <!-- airplane -->
         <img src="./public/assets/images/airplane.png" class="airplane" alt="Loading..." />
         <div class="loading-text">Loading.......</div>
     </div>
 
-    <!-- fluffy clouds -->
+    <!-- clouds -->
     <div class="cloud small"></div>
     <div class="cloud medium"></div>
     <div class="cloud large"></div>
