@@ -1,10 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airplane Loader</title>
 <style>
 .page-loader {
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 9999;
-    background: #ffffff;
+    background: linear-gradient(to bottom, #87CEFA, #ffffff); /* Sky blue to white */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,34 +31,66 @@
     animation: flyUp 3s ease-in-out infinite;
 }
 
-/* clouds */
+/* better fluffy clouds */
 .cloud {
     position: absolute;
-    background: #f1f1f1;
+    background: #ffffff;
     border-radius: 50%;
-    opacity: 0.8;
-    animation: cloudMove 12s linear infinite;
+    box-shadow: 
+        -30px 10px 40px rgba(0,0,0,0.05),
+        20px 20px 40px rgba(0,0,0,0.05);
+    opacity: 0.9;
+    filter: blur(1px);
+    animation: cloudMove 18s linear infinite;
 }
 
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.cloud::before {
+    width: 80%;
+    height: 80%;
+    top: -30%;
+    left: -30%;
+}
+
+.cloud::after {
+    width: 70%;
+    height: 70%;
+    top: -20%;
+    right: -25%;
+}
+
+/* cloud sizes & positions */
 .cloud.small {
-    width: 60px;
+    width: 70px;
     height: 40px;
-    bottom: 30%;
-    left: -80px;
+    bottom: 25%;
+    left: -120px;
+    animation-duration: 25s;
     animation-delay: 2s;
 }
+
 .cloud.medium {
-    width: 100px;
+    width: 120px;
     height: 60px;
     top: 40%;
-    left: -150px;
+    left: -200px;
+    animation-duration: 30s;
     animation-delay: 4s;
 }
+
 .cloud.large {
-    width: 150px;
+    width: 180px;
     height: 90px;
-    top: 20%;
-    left: -200px;
+    top: 15%;
+    left: -250px;
+    animation-duration: 35s;
 }
 
 /* airplane flying animation */
@@ -82,17 +120,21 @@
     50% { opacity: 0.4; }
 }
 </style>
+</head>
+<body>
 
 <div class="page-loader">
     <div class="loader">
-        <!-- Replace with your airplane SVG/PNG -->
+        <!-- Replace with your airplane image -->
         <img src="./public/assets/images/airplane.png" class="airplane" alt="Loading..." />
-
         <div class="loading-text">Loading.......</div>
     </div>
 
-    <!-- clouds -->
+    <!-- fluffy clouds -->
     <div class="cloud small"></div>
     <div class="cloud medium"></div>
     <div class="cloud large"></div>
 </div>
+
+</body>
+</html>
