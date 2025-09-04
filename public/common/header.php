@@ -105,7 +105,7 @@
                     </li> -->
 
                     <li >
-                        <a href="https://www.wechat.com/" target="_blank">
+                        <a href="https://u.wechat.com/kO-miaWKY63-1HDBV1wS2vs?s=2" target="_blank">
                         <img src="public/assets/images/header/wechat-icon.svg" width="70" alt="we-chat">
                         <span>We Chat</span>
                         </a>

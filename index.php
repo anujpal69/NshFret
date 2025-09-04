@@ -12,7 +12,7 @@
         </div>
         <div class="container-fluid container-lg">
             <div class="nsh-home-content text-center ">
-                <h1 class="title"><strong> NSH FREIGHTERS PVT LTD.</strong></h>
+                <h1 class="title"><strong> NSH FREIGHTERS PVT. LTD.</strong></h>
                     <h2 class="mt-2 mb-0">Where Innovation Meets Logistics</h2>
                     <button class="mt-4 btn btn-default all-solutions-btn _btn" data-bs-toggle="modal"
                         data-bs-target="#trackModal">Track your shipment</button>

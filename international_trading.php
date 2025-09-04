@@ -38,7 +38,7 @@ include_once 'public/common/header.php' ?>
                         <div class="supporting-safe-content px-0">
                             <h2 class="fs28 fw800  pb-4">Empowering Trade, Enabling Growth</h2>
                             <p>
-                               At NSH FREIGHTERS PVT LTD, we are more than just traders — we are strategic partners in
+                               At NSH FREIGHTERS PVT. LTD, we are more than just traders — we are strategic partners in
                                 global commerce. Specializing in the sourcing, trading, and supply of premium-quality 
                                 products, we connect international markets with precision, efficiency, and integrity.
                             </p>
@@ -46,7 +46,7 @@ include_once 'public/common/header.php' ?>
                              <p>Backed by deep industry expertise and a robust global network, we deliver tailored 
                                 procurement solutions that empower businesses to scale, adapt, and thrive. Whether
                                 you're a supplier seeking new markets or a buyer in search of reliable sourcing,
-                                 NSH FREIGHTERS PVT LTD is your bridge to opportunity.</p>
+                                 NSH FREIGHTERS PVT. LTD is your bridge to opportunity.</p>
 
 
                            <!-- <h4>Types of Haz Cargo:</h4>
