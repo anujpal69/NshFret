@@ -16,7 +16,7 @@
                             <li><a target="_blank" href="https://www.wechat.com/">
                                     <img src="public/assets/images/header/wechat.png" alt="we chat"></a>
                             </li>
-                            <li><a target="_blank" href="javascript:void(0)">
+                            <li><a  href="https://u.wechat.com/kO-miaWKY63-1HDBV1wS2vs?s=2" target="_blank" href="javascript:void(0)">
                                     <img src="public/assets/images/header/kakao.png" alt="we chat"></a>
                             </li>
                         </ul>
